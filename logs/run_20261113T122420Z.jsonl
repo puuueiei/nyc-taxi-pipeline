@@ -1,0 +1,62 @@
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "pipeline", "status": "START", "expected_files": 24, "offline": false, "force": false}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "START"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "yellow_tripdata_2024-01.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "yellow_tripdata_2024-02.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "yellow_tripdata_2024-03.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "yellow_tripdata_2024-04.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "yellow_tripdata_2024-05.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "yellow_tripdata_2024-06.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "green_tripdata_2024-01.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "green_tripdata_2024-02.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "green_tripdata_2024-03.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "green_tripdata_2024-04.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "green_tripdata_2024-05.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "green_tripdata_2024-06.parquet"}
+{"ts": "2026-11-13T12:24:20+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhv_tripdata_2024-01.parquet"}
+{"ts": "2026-11-13T12:24:21+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhv_tripdata_2024-02.parquet"}
+{"ts": "2026-11-13T12:24:22+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhv_tripdata_2024-03.parquet"}
+{"ts": "2026-11-13T12:24:23+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhv_tripdata_2024-04.parquet"}
+{"ts": "2026-11-13T12:24:23+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhv_tripdata_2024-05.parquet"}
+{"ts": "2026-11-13T12:24:24+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhv_tripdata_2024-06.parquet"}
+{"ts": "2026-11-13T12:24:25+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhvhv_tripdata_2024-01.parquet"}
+{"ts": "2026-11-13T12:24:26+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhvhv_tripdata_2024-02.parquet"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhvhv_tripdata_2024-03.parquet"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhvhv_tripdata_2024-04.parquet"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhvhv_tripdata_2024-05.parquet"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "CACHED", "file": "fhvhv_tripdata_2024-06.parquet"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "ingest", "status": "OK", "seconds": 7.07, "downloaded": 0, "cached": 24, "missing": 0, "failed": 0}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "START"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "yellow_tripdata_2024-01.parquet", "rows": 2964624, "in_window": 2964609}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "yellow_tripdata_2024-02.parquet", "rows": 3007526, "in_window": 3007524}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "yellow_tripdata_2024-03.parquet", "rows": 3582628, "in_window": 3582626}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "yellow_tripdata_2024-04.parquet", "rows": 3514289, "in_window": 3514285}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "yellow_tripdata_2024-05.parquet", "rows": 3723833, "in_window": 3723826}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "yellow_tripdata_2024-06.parquet", "rows": 3539193, "in_window": 3539184}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "green_tripdata_2024-01.parquet", "rows": 56551, "in_window": 56549}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "green_tripdata_2024-02.parquet", "rows": 53577, "in_window": 53577}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "green_tripdata_2024-03.parquet", "rows": 57457, "in_window": 57455}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "green_tripdata_2024-04.parquet", "rows": 56471, "in_window": 56471}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "green_tripdata_2024-05.parquet", "rows": 61003, "in_window": 61001}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "green_tripdata_2024-06.parquet", "rows": 54748, "in_window": 54748}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhv_tripdata_2024-01.parquet", "rows": 1290116, "in_window": 1290116}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhv_tripdata_2024-02.parquet", "rows": 1176093, "in_window": 1176093}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhv_tripdata_2024-03.parquet", "rows": 1469352, "in_window": 1469352}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhv_tripdata_2024-04.parquet", "rows": 1444626, "in_window": 1444626}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhv_tripdata_2024-05.parquet", "rows": 1352502, "in_window": 1352502}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhv_tripdata_2024-06.parquet", "rows": 1386539, "in_window": 1386539}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhvhv_tripdata_2024-01.parquet", "rows": 19663930, "in_window": 19663930}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhvhv_tripdata_2024-02.parquet", "rows": 19359148, "in_window": 19359148}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhvhv_tripdata_2024-03.parquet", "rows": 21280788, "in_window": 21280788}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhvhv_tripdata_2024-04.parquet", "rows": 19733038, "in_window": 19733038}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhvhv_tripdata_2024-05.parquet", "rows": 20704538, "in_window": 20704538}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "CACHED", "file": "fhvhv_tripdata_2024-06.parquet", "rows": 20123226, "in_window": 20123226}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "scan", "status": "OK", "seconds": 0.03, "scanned": 0, "reused_from_cache": 24}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "quality", "status": "START"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "quality", "status": "OK", "seconds": 0.02, "PASS": 193, "WARN": 0, "FAIL": 0, "gate": "OPEN"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "curate", "status": "START"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "curate", "status": "OK", "seconds": 0.04, "files": 6, "daily_rows": 728}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "analyze", "status": "START"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "analyze", "status": "OK", "seconds": 0.49, "winner": "High Volume FHV", "winner_trips": 120864668}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "reconcile", "status": "START"}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "reconcile", "status": "OK", "seconds": 0.0, "total_trips": 149655751, "reconciled": true}
+{"ts": "2026-11-13T12:24:27+00:00", "run_id": "20261113T122420Z", "stage": "pipeline", "status": "SUCCESS", "winner": "High Volume FHV", "total_trips": 149655751, "dq_warnings": 0, "demo_data": false}

@@ -1,0 +1,5 @@
+rank,taxi_type,total_trips,share_percent,baseline_total_trips,excluded_vs_baseline,excluded_pct
+1,High Volume FHV,120864668,80.76,120864668,0,0.0
+2,Yellow,20332054,13.59,20332093,39,0.0002
+3,FHV,8119228,5.43,8119228,0,0.0
+4,Green,339801,0.23,339807,6,0.0018

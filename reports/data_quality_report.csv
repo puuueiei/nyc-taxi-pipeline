@@ -1,0 +1,194 @@
+check_id,scope,status,value,threshold,message
+Q01_file_present,yellow_tripdata_2024-01.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,yellow_tripdata_2024-01.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,yellow_tripdata_2024-01.parquet,PASS,2964624 vs 2964624,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,yellow_tripdata_2024-01.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,yellow_tripdata_2024-01.parquet,PASS,0.0005,warn>0.5 fail>10.0,"15 rows pickup outside window (min=2002-12-31 22:59:39, max=2024-02-01 00:01:15) -> excluded"
+Q06_negative_duration_pct,yellow_tripdata_2024-01.parquet,PASS,0.0019,warn>0.5,56 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,yellow_tripdata_2024-01.parquet,PASS,2964609,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,yellow_tripdata_2024-01.parquet,PASS,2964609 vs 2964609,equal,daily aggregation reconciles
+Q01_file_present,yellow_tripdata_2024-02.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,yellow_tripdata_2024-02.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,yellow_tripdata_2024-02.parquet,PASS,3007526 vs 3007526,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,yellow_tripdata_2024-02.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,yellow_tripdata_2024-02.parquet,PASS,0.0001,warn>0.5 fail>10.0,"2 rows pickup outside window (min=2008-12-31 22:52:49, max=2024-03-01 00:01:37) -> excluded"
+Q06_negative_duration_pct,yellow_tripdata_2024-02.parquet,PASS,0.0002,warn>0.5,7 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,yellow_tripdata_2024-02.parquet,PASS,3007524,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,yellow_tripdata_2024-02.parquet,PASS,3007524 vs 3007524,equal,daily aggregation reconciles
+Q01_file_present,yellow_tripdata_2024-03.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,yellow_tripdata_2024-03.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,yellow_tripdata_2024-03.parquet,PASS,3582628 vs 3582628,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,yellow_tripdata_2024-03.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,yellow_tripdata_2024-03.parquet,PASS,0.0001,warn>0.5 fail>10.0,"2 rows pickup outside window (min=2002-12-31 22:17:10, max=2024-04-01 00:34:55) -> excluded"
+Q06_negative_duration_pct,yellow_tripdata_2024-03.parquet,PASS,0.0033,warn>0.5,117 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,yellow_tripdata_2024-03.parquet,PASS,3582626,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,yellow_tripdata_2024-03.parquet,PASS,3582626 vs 3582626,equal,daily aggregation reconciles
+Q01_file_present,yellow_tripdata_2024-04.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,yellow_tripdata_2024-04.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,yellow_tripdata_2024-04.parquet,PASS,3514289 vs 3514289,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,yellow_tripdata_2024-04.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,yellow_tripdata_2024-04.parquet,PASS,0.0001,warn>0.5 fail>10.0,"4 rows pickup outside window (min=2002-12-31 22:10:04, max=2024-05-01 00:02:36) -> excluded"
+Q06_negative_duration_pct,yellow_tripdata_2024-04.parquet,PASS,0.002,warn>0.5,70 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,yellow_tripdata_2024-04.parquet,PASS,3514285,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,yellow_tripdata_2024-04.parquet,PASS,3514285 vs 3514285,equal,daily aggregation reconciles
+Q01_file_present,yellow_tripdata_2024-05.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,yellow_tripdata_2024-05.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,yellow_tripdata_2024-05.parquet,PASS,3723833 vs 3723833,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,yellow_tripdata_2024-05.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,yellow_tripdata_2024-05.parquet,PASS,0.0002,warn>0.5 fail>10.0,"7 rows pickup outside window (min=2002-12-31 16:46:07, max=2024-06-01 23:54:14) -> excluded"
+Q06_negative_duration_pct,yellow_tripdata_2024-05.parquet,PASS,0.0011,warn>0.5,42 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,yellow_tripdata_2024-05.parquet,PASS,3723826,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,yellow_tripdata_2024-05.parquet,PASS,3723826 vs 3723826,equal,daily aggregation reconciles
+Q01_file_present,yellow_tripdata_2024-06.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,yellow_tripdata_2024-06.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,yellow_tripdata_2024-06.parquet,PASS,3539193 vs 3539193,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,yellow_tripdata_2024-06.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,yellow_tripdata_2024-06.parquet,PASS,0.0003,warn>0.5 fail>10.0,"9 rows pickup outside window (min=2008-12-31 00:00:00, max=2026-06-26 23:53:12) -> excluded"
+Q06_negative_duration_pct,yellow_tripdata_2024-06.parquet,PASS,0.0002,warn>0.5,8 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,yellow_tripdata_2024-06.parquet,PASS,3539184,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,yellow_tripdata_2024-06.parquet,PASS,3539184 vs 3539184,equal,daily aggregation reconciles
+Q01_file_present,green_tripdata_2024-01.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,green_tripdata_2024-01.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,green_tripdata_2024-01.parquet,PASS,56551 vs 56551,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,green_tripdata_2024-01.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,green_tripdata_2024-01.parquet,PASS,0.0035,warn>0.5 fail>10.0,"2 rows pickup outside window (min=2023-12-31 14:38:47, max=2024-01-31 23:57:29) -> excluded"
+Q06_negative_duration_pct,green_tripdata_2024-01.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,green_tripdata_2024-01.parquet,PASS,56549,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,green_tripdata_2024-01.parquet,PASS,56549 vs 56549,equal,daily aggregation reconciles
+Q01_file_present,green_tripdata_2024-02.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,green_tripdata_2024-02.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,green_tripdata_2024-02.parquet,PASS,53577 vs 53577,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,green_tripdata_2024-02.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,green_tripdata_2024-02.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-01-25 19:10:32, max=2024-02-29 23:56:40) -> excluded"
+Q06_negative_duration_pct,green_tripdata_2024-02.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,green_tripdata_2024-02.parquet,PASS,53577,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,green_tripdata_2024-02.parquet,PASS,53577 vs 53577,equal,daily aggregation reconciles
+Q01_file_present,green_tripdata_2024-03.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,green_tripdata_2024-03.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,green_tripdata_2024-03.parquet,PASS,57457 vs 57457,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,green_tripdata_2024-03.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,green_tripdata_2024-03.parquet,PASS,0.0035,warn>0.5 fail>10.0,"2 rows pickup outside window (min=2008-12-31 23:02:24, max=2024-04-01 00:01:45) -> excluded"
+Q06_negative_duration_pct,green_tripdata_2024-03.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,green_tripdata_2024-03.parquet,PASS,57455,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,green_tripdata_2024-03.parquet,PASS,57455 vs 57455,equal,daily aggregation reconciles
+Q01_file_present,green_tripdata_2024-04.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,green_tripdata_2024-04.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,green_tripdata_2024-04.parquet,PASS,56471 vs 56471,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,green_tripdata_2024-04.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,green_tripdata_2024-04.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-03-31 22:34:23, max=2024-04-30 23:59:33) -> excluded"
+Q06_negative_duration_pct,green_tripdata_2024-04.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,green_tripdata_2024-04.parquet,PASS,56471,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,green_tripdata_2024-04.parquet,PASS,56471 vs 56471,equal,daily aggregation reconciles
+Q01_file_present,green_tripdata_2024-05.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,green_tripdata_2024-05.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,green_tripdata_2024-05.parquet,PASS,61003 vs 61003,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,green_tripdata_2024-05.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,green_tripdata_2024-05.parquet,PASS,0.0033,warn>0.5 fail>10.0,"2 rows pickup outside window (min=2009-01-01 00:27:54, max=2024-06-01 00:00:56) -> excluded"
+Q06_negative_duration_pct,green_tripdata_2024-05.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,green_tripdata_2024-05.parquet,PASS,61001,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,green_tripdata_2024-05.parquet,PASS,61001 vs 61001,equal,daily aggregation reconciles
+Q01_file_present,green_tripdata_2024-06.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,green_tripdata_2024-06.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,green_tripdata_2024-06.parquet,PASS,54748 vs 54748,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,green_tripdata_2024-06.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,green_tripdata_2024-06.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-05-24 17:04:38, max=2024-06-30 23:57:10) -> excluded"
+Q06_negative_duration_pct,green_tripdata_2024-06.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,green_tripdata_2024-06.parquet,PASS,54748,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,green_tripdata_2024-06.parquet,PASS,54748 vs 54748,equal,daily aggregation reconciles
+Q01_file_present,fhv_tripdata_2024-01.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhv_tripdata_2024-01.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhv_tripdata_2024-01.parquet,PASS,1290116 vs 1290116,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhv_tripdata_2024-01.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhv_tripdata_2024-01.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-01-01 00:00:01, max=2024-01-31 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhv_tripdata_2024-01.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhv_tripdata_2024-01.parquet,PASS,1290116,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhv_tripdata_2024-01.parquet,PASS,1290116 vs 1290116,equal,daily aggregation reconciles
+Q01_file_present,fhv_tripdata_2024-02.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhv_tripdata_2024-02.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhv_tripdata_2024-02.parquet,PASS,1176093 vs 1176093,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhv_tripdata_2024-02.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhv_tripdata_2024-02.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-02-01 00:00:00, max=2024-02-29 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhv_tripdata_2024-02.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhv_tripdata_2024-02.parquet,PASS,1176093,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhv_tripdata_2024-02.parquet,PASS,1176093 vs 1176093,equal,daily aggregation reconciles
+Q01_file_present,fhv_tripdata_2024-03.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhv_tripdata_2024-03.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhv_tripdata_2024-03.parquet,PASS,1469352 vs 1469352,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhv_tripdata_2024-03.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhv_tripdata_2024-03.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-03-01 00:00:00, max=2024-03-31 23:59:57) -> excluded"
+Q06_negative_duration_pct,fhv_tripdata_2024-03.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhv_tripdata_2024-03.parquet,PASS,1469352,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhv_tripdata_2024-03.parquet,PASS,1469352 vs 1469352,equal,daily aggregation reconciles
+Q01_file_present,fhv_tripdata_2024-04.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhv_tripdata_2024-04.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhv_tripdata_2024-04.parquet,PASS,1444626 vs 1444626,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhv_tripdata_2024-04.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhv_tripdata_2024-04.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-04-01 00:00:00, max=2024-04-30 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhv_tripdata_2024-04.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhv_tripdata_2024-04.parquet,PASS,1444626,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhv_tripdata_2024-04.parquet,PASS,1444626 vs 1444626,equal,daily aggregation reconciles
+Q01_file_present,fhv_tripdata_2024-05.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhv_tripdata_2024-05.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhv_tripdata_2024-05.parquet,PASS,1352502 vs 1352502,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhv_tripdata_2024-05.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhv_tripdata_2024-05.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-05-01 00:00:00, max=2024-05-31 23:59:47) -> excluded"
+Q06_negative_duration_pct,fhv_tripdata_2024-05.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhv_tripdata_2024-05.parquet,PASS,1352502,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhv_tripdata_2024-05.parquet,PASS,1352502 vs 1352502,equal,daily aggregation reconciles
+Q01_file_present,fhv_tripdata_2024-06.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhv_tripdata_2024-06.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhv_tripdata_2024-06.parquet,PASS,1386539 vs 1386539,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhv_tripdata_2024-06.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhv_tripdata_2024-06.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-06-01 00:00:00, max=2024-06-30 23:59:57) -> excluded"
+Q06_negative_duration_pct,fhv_tripdata_2024-06.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhv_tripdata_2024-06.parquet,PASS,1386539,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhv_tripdata_2024-06.parquet,PASS,1386539 vs 1386539,equal,daily aggregation reconciles
+Q01_file_present,fhvhv_tripdata_2024-01.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhvhv_tripdata_2024-01.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhvhv_tripdata_2024-01.parquet,PASS,19663930 vs 19663930,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhvhv_tripdata_2024-01.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhvhv_tripdata_2024-01.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-01-01 00:00:00, max=2024-01-31 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhvhv_tripdata_2024-01.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhvhv_tripdata_2024-01.parquet,PASS,19663930,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhvhv_tripdata_2024-01.parquet,PASS,19663930 vs 19663930,equal,daily aggregation reconciles
+Q01_file_present,fhvhv_tripdata_2024-02.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhvhv_tripdata_2024-02.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhvhv_tripdata_2024-02.parquet,PASS,19359148 vs 19359148,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhvhv_tripdata_2024-02.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhvhv_tripdata_2024-02.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-02-01 00:00:00, max=2024-02-29 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhvhv_tripdata_2024-02.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhvhv_tripdata_2024-02.parquet,PASS,19359148,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhvhv_tripdata_2024-02.parquet,PASS,19359148 vs 19359148,equal,daily aggregation reconciles
+Q01_file_present,fhvhv_tripdata_2024-03.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhvhv_tripdata_2024-03.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhvhv_tripdata_2024-03.parquet,PASS,21280788 vs 21280788,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhvhv_tripdata_2024-03.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhvhv_tripdata_2024-03.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-03-01 00:00:00, max=2024-03-31 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhvhv_tripdata_2024-03.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhvhv_tripdata_2024-03.parquet,PASS,21280788,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhvhv_tripdata_2024-03.parquet,PASS,21280788 vs 21280788,equal,daily aggregation reconciles
+Q01_file_present,fhvhv_tripdata_2024-04.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhvhv_tripdata_2024-04.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhvhv_tripdata_2024-04.parquet,PASS,19733038 vs 19733038,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhvhv_tripdata_2024-04.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhvhv_tripdata_2024-04.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-04-01 00:00:00, max=2024-04-30 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhvhv_tripdata_2024-04.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhvhv_tripdata_2024-04.parquet,PASS,19733038,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhvhv_tripdata_2024-04.parquet,PASS,19733038 vs 19733038,equal,daily aggregation reconciles
+Q01_file_present,fhvhv_tripdata_2024-05.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhvhv_tripdata_2024-05.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhvhv_tripdata_2024-05.parquet,PASS,20704538 vs 20704538,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhvhv_tripdata_2024-05.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhvhv_tripdata_2024-05.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-05-01 00:00:00, max=2024-05-31 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhvhv_tripdata_2024-05.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhvhv_tripdata_2024-05.parquet,PASS,20704538,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhvhv_tripdata_2024-05.parquet,PASS,20704538 vs 20704538,equal,daily aggregation reconciles
+Q01_file_present,fhvhv_tripdata_2024-06.parquet,PASS,cached,downloaded|cached,file available
+Q02_readable_schema,fhvhv_tripdata_2024-06.parquet,PASS,ok,readable & required columns,"parquet readable, pickup/dropoff present"
+Q03_rowcount_matches_metadata,fhvhv_tripdata_2024-06.parquet,PASS,20123226 vs 20123226,equal,metadata rows equal scanned rows
+Q04_null_pickup_pct,fhvhv_tripdata_2024-06.parquet,PASS,0.0,warn>0.1 fail>5.0,0 null pickup rows
+Q05_out_of_window_pct,fhvhv_tripdata_2024-06.parquet,PASS,0.0,warn>0.5 fail>10.0,"0 rows pickup outside window (min=2024-06-01 00:00:00, max=2024-06-30 23:59:59) -> excluded"
+Q06_negative_duration_pct,fhvhv_tripdata_2024-06.parquet,PASS,0.0,warn>0.5,0 rows dropoff<pickup (kept: เราวัดจำนวน trip ไม่ใช่เวลา)
+Q07_has_in_window_rows,fhvhv_tripdata_2024-06.parquet,PASS,20123226,>0,file contributes rows to window
+Q08_daily_sum_equals_in_window,fhvhv_tripdata_2024-06.parquet,PASS,20123226 vs 20123226,equal,daily aggregation reconciles
+Q09_coverage_complete,ALL,PASS,24/24,all type x month,complete

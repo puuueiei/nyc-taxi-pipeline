@@ -1,0 +1,50 @@
+# ทุกอย่างที่เปลี่ยนได้ของ pipeline อยู่ในไฟล์นี้ (ไม่ hard-code ใน code)
+# อยากอัปเดตข้อมูลใหม่ -> แก้ analysis_window.end แล้วรัน pipeline ซ้ำ
+
+source:
+  base_url: https://d37ci6vzurychx.cloudfront.net/trip-data
+  timeout_seconds: 120
+  retries: 3
+
+analysis_window:          # ช่วงที่ใช้ตอบคำถาม (นับด้วยวัน pickup ของแต่ละ trip)
+  start: "2024-01-01"
+  end: "2024-06-30"       # inclusive
+
+taxi_types:               # schema ต่างกัน -> map ชื่อ column ไว้ที่นี่ที่เดียว
+  yellow:
+    display: Yellow
+    prefix: yellow_tripdata
+    pickup: tpep_pickup_datetime
+    dropoff: tpep_dropoff_datetime
+  green:
+    display: Green
+    prefix: green_tripdata
+    pickup: lpep_pickup_datetime
+    dropoff: lpep_dropoff_datetime
+  fhv:
+    display: FHV
+    prefix: fhv_tripdata
+    pickup: pickup_datetime
+    dropoff: dropOff_datetime
+  fhvhv:
+    display: High Volume FHV
+    prefix: fhvhv_tripdata
+    pickup: pickup_datetime
+    dropoff: dropoff_datetime
+
+paths:
+  raw: data/raw
+  curated: data/curated
+  state: state
+  reports: reports
+  logs: logs
+
+scan:
+  batch_rows: 1000000     # อ่านทีละ batch เพื่อคุม memory (fhvhv ~20 ล้านแถว/ไฟล์)
+
+quality_thresholds:       # หน่วยเป็น % ของแถวในไฟล์
+  null_pickup_warn_pct: 0.1
+  null_pickup_fail_pct: 5.0
+  out_of_window_warn_pct: 0.5     # pickup อยู่นอกช่วงที่วิเคราะห์ (วันที่เพี้ยน)
+  out_of_window_fail_pct: 10.0
+  negative_duration_warn_pct: 0.5

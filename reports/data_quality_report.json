@@ -1,0 +1,1546 @@
+[
+  {
+    "check_id":"Q01_file_present",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"2964624 vs 2964624",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0005,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"15 rows pickup outside window (min=2002-12-31 22:59:39, max=2024-02-01 00:01:15) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0019,
+    "threshold":"warn>0.5",
+    "message":"56 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":2964609,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"yellow_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"2964609 vs 2964609",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"3007526 vs 3007526",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0001,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"2 rows pickup outside window (min=2008-12-31 22:52:49, max=2024-03-01 00:01:37) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0002,
+    "threshold":"warn>0.5",
+    "message":"7 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":3007524,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"yellow_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"3007524 vs 3007524",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"3582628 vs 3582628",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0001,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"2 rows pickup outside window (min=2002-12-31 22:17:10, max=2024-04-01 00:34:55) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0033,
+    "threshold":"warn>0.5",
+    "message":"117 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":3582626,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"yellow_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"3582626 vs 3582626",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"3514289 vs 3514289",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0001,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"4 rows pickup outside window (min=2002-12-31 22:10:04, max=2024-05-01 00:02:36) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.002,
+    "threshold":"warn>0.5",
+    "message":"70 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":3514285,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"yellow_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"3514285 vs 3514285",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"3723833 vs 3723833",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0002,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"7 rows pickup outside window (min=2002-12-31 16:46:07, max=2024-06-01 23:54:14) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0011,
+    "threshold":"warn>0.5",
+    "message":"42 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":3723826,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"yellow_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"3723826 vs 3723826",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"3539193 vs 3539193",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0003,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"9 rows pickup outside window (min=2008-12-31 00:00:00, max=2026-06-26 23:53:12) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0002,
+    "threshold":"warn>0.5",
+    "message":"8 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":3539184,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"yellow_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"3539184 vs 3539184",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"56551 vs 56551",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0035,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"2 rows pickup outside window (min=2023-12-31 14:38:47, max=2024-01-31 23:57:29) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":56549,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"green_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"56549 vs 56549",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"53577 vs 53577",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-01-25 19:10:32, max=2024-02-29 23:56:40) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":53577,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"green_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"53577 vs 53577",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"57457 vs 57457",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0035,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"2 rows pickup outside window (min=2008-12-31 23:02:24, max=2024-04-01 00:01:45) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":57455,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"green_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"57455 vs 57455",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"56471 vs 56471",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-03-31 22:34:23, max=2024-04-30 23:59:33) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":56471,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"green_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"56471 vs 56471",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"61003 vs 61003",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0033,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"2 rows pickup outside window (min=2009-01-01 00:27:54, max=2024-06-01 00:00:56) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":61001,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"green_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"61001 vs 61001",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"54748 vs 54748",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-05-24 17:04:38, max=2024-06-30 23:57:10) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":54748,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"green_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"54748 vs 54748",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"1290116 vs 1290116",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-01-01 00:00:01, max=2024-01-31 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":1290116,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"1290116 vs 1290116",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"1176093 vs 1176093",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-02-01 00:00:00, max=2024-02-29 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":1176093,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"1176093 vs 1176093",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"1469352 vs 1469352",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-03-01 00:00:00, max=2024-03-31 23:59:57) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":1469352,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"1469352 vs 1469352",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"1444626 vs 1444626",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-04-01 00:00:00, max=2024-04-30 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":1444626,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"1444626 vs 1444626",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"1352502 vs 1352502",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-05-01 00:00:00, max=2024-05-31 23:59:47) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":1352502,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"1352502 vs 1352502",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"1386539 vs 1386539",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-06-01 00:00:00, max=2024-06-30 23:59:57) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":1386539,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"1386539 vs 1386539",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"19663930 vs 19663930",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-01-01 00:00:00, max=2024-01-31 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":19663930,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhvhv_tripdata_2024-01.parquet",
+    "status":"PASS",
+    "value":"19663930 vs 19663930",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"19359148 vs 19359148",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-02-01 00:00:00, max=2024-02-29 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":19359148,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhvhv_tripdata_2024-02.parquet",
+    "status":"PASS",
+    "value":"19359148 vs 19359148",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"21280788 vs 21280788",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-03-01 00:00:00, max=2024-03-31 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":21280788,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhvhv_tripdata_2024-03.parquet",
+    "status":"PASS",
+    "value":"21280788 vs 21280788",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"19733038 vs 19733038",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-04-01 00:00:00, max=2024-04-30 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":19733038,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhvhv_tripdata_2024-04.parquet",
+    "status":"PASS",
+    "value":"19733038 vs 19733038",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"20704538 vs 20704538",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-05-01 00:00:00, max=2024-05-31 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":20704538,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhvhv_tripdata_2024-05.parquet",
+    "status":"PASS",
+    "value":"20704538 vs 20704538",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q01_file_present",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"cached",
+    "threshold":"downloaded|cached",
+    "message":"file available"
+  },
+  {
+    "check_id":"Q02_readable_schema",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"ok",
+    "threshold":"readable & required columns",
+    "message":"parquet readable, pickup\/dropoff present"
+  },
+  {
+    "check_id":"Q03_rowcount_matches_metadata",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"20123226 vs 20123226",
+    "threshold":"equal",
+    "message":"metadata rows equal scanned rows"
+  },
+  {
+    "check_id":"Q04_null_pickup_pct",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.1 fail>5.0",
+    "message":"0 null pickup rows"
+  },
+  {
+    "check_id":"Q05_out_of_window_pct",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5 fail>10.0",
+    "message":"0 rows pickup outside window (min=2024-06-01 00:00:00, max=2024-06-30 23:59:59) -> excluded"
+  },
+  {
+    "check_id":"Q06_negative_duration_pct",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":0.0,
+    "threshold":"warn>0.5",
+    "message":"0 rows dropoff<pickup (kept: \u0e40\u0e23\u0e32\u0e27\u0e31\u0e14\u0e08\u0e33\u0e19\u0e27\u0e19 trip \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e40\u0e27\u0e25\u0e32)"
+  },
+  {
+    "check_id":"Q07_has_in_window_rows",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":20123226,
+    "threshold":">0",
+    "message":"file contributes rows to window"
+  },
+  {
+    "check_id":"Q08_daily_sum_equals_in_window",
+    "scope":"fhvhv_tripdata_2024-06.parquet",
+    "status":"PASS",
+    "value":"20123226 vs 20123226",
+    "threshold":"equal",
+    "message":"daily aggregation reconciles"
+  },
+  {
+    "check_id":"Q09_coverage_complete",
+    "scope":"ALL",
+    "status":"PASS",
+    "value":"24\/24",
+    "threshold":"all type x month",
+    "message":"complete"
+  }
+]

@@ -1,0 +1,17 @@
+flowchart LR
+    SRC[("NYC TLC<br/>24 parquet files<br/>4 types x 6 months")] --> ING
+    CFG[/"config/pipeline.yaml<br/>window, column mapping, thresholds"/] -.-> ING
+    subgraph PIPE["taxi_pipeline run"]
+      ING["1 Ingest<br/>HEAD size check, download if new/changed<br/>sha256 to manifest"] --> SCAN
+      SCAN["2 Scan<br/>read pickup/dropoff only, batch<br/>cache by sha256"] --> DQ
+      DQ{"3 Quality gate<br/>Q01-Q09"} -- "no FAIL" --> CUR
+      CUR["4 Curate<br/>standard schema + lineage"] --> ANA
+      ANA["5 Analyze<br/>rank + compare with baseline"] --> REC["6 Reconcile"]
+    end
+    DQ -- "any FAIL" --> STOP(["stop: status = FAILED_QUALITY_GATE<br/>no curated output"])
+    ING -.-> M[("state/manifest.json")]
+    SCAN -.-> C[("state/file_results/*.json")]
+    DQ --> R1[/"reports/data_quality_report.csv"/]
+    CUR --> O1[/"data/curated/*.parquet, *.csv"/]
+    ANA --> O2[/"reports/results.md, ranking.csv, figures/"/]
+    PIPE -.-> L[/"logs/run_ID.jsonl + reports/status.json"/]

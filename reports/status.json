@@ -1,0 +1,52 @@
+{
+  "run_id": "20261113T122420Z",
+  "overall_status": "SUCCESS",
+  "started": "2026-11-13T12:24:20+00:00",
+  "finished": "2026-11-13T12:24:27+00:00",
+  "stages": {
+    "ingest": {
+      "status": "OK",
+      "seconds": 7.07,
+      "downloaded": 0,
+      "cached": 24,
+      "missing": 0,
+      "failed": 0
+    },
+    "scan": {
+      "status": "OK",
+      "seconds": 0.03,
+      "scanned": 0,
+      "reused_from_cache": 24
+    },
+    "quality": {
+      "status": "OK",
+      "seconds": 0.02,
+      "PASS": 193,
+      "WARN": 0,
+      "FAIL": 0,
+      "gate": "OPEN"
+    },
+    "curate": {
+      "status": "OK",
+      "seconds": 0.04,
+      "files": 6,
+      "daily_rows": 728
+    },
+    "analyze": {
+      "status": "OK",
+      "seconds": 0.49,
+      "winner": "High Volume FHV",
+      "winner_trips": 120864668
+    },
+    "reconcile": {
+      "status": "OK",
+      "seconds": 0.0,
+      "total_trips": 149655751,
+      "reconciled": true
+    }
+  },
+  "winner": "High Volume FHV",
+  "total_trips": 149655751,
+  "dq_warnings": 0,
+  "demo_data": false
+}
