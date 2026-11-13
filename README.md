@@ -179,9 +179,9 @@ python -m taxi_pipeline status
 ```
 ### ภาพหลักฐานการรันและสถานะการทำงานของ Pipeline
 
-![alt text](image.png)
+![alt text](docs/run.png)
 
-![alt text](image-1.png)
+![alt text](docs/status.png)
 
 ## 7. Curated Dataset
 
